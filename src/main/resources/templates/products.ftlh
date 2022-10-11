@@ -32,4 +32,59 @@
             <h1 style="text-align: center">Не найдено</h1>
         </#list>
     </div>
+    <button class="page-btn-1">1</button>
+    <button class="page-btn-2">2</button>
+    <button class="page-btn-3">3</button>
+    <script>
+            let cards = document.querySelectorAll('.product-link');
+            console.log(cards)
+            cards[3].style.display = 'none';
+            cards[4].style.display = 'none';
+            cards[5].style.display = 'none';
+            cards[6].style.display = 'none';
+            cards[7].style.display = 'none';
+            cards[8].style.display = 'none';
+
+
+            let btn1 = document.querySelector('.page-btn-1');
+            let btn2 = document.querySelector('.page-btn-2');
+            let btn3 = document.querySelector('.page-btn-3');
+
+            btn1.onclick = function () {
+                cards[3].style.display = 'none';
+                cards[4].style.display = 'none';
+                cards[5].style.display = 'none';
+                cards[6].style.display = 'none';
+                cards[7].style.display = 'none';
+                cards[8].style.display = 'none';
+
+                cards[0].style.display = 'block';
+                cards[1].style.display = 'block';
+                cards[2].style.display = 'block';
+            }
+            btn2.onclick = function () {
+                cards[3].style.display = 'block';
+                cards[4].style.display = 'block';
+                cards[5].style.display = 'block';
+
+                cards[0].style.display = 'none';
+                cards[1].style.display = 'none';
+                cards[2].style.display = 'none';
+                cards[6].style.display = 'none';
+                cards[7].style.display = 'none';
+                cards[8].style.display = 'none';
+            }
+            btn3.onclick = function () {
+                cards[6].style.display = 'block';
+                cards[7].style.display = 'block';
+                cards[8].style.display = 'block';
+
+                cards[0].style.display = 'none';
+                cards[1].style.display = 'none';
+                cards[2].style.display = 'none';
+                cards[3].style.display = 'none';
+                cards[4].style.display = 'none';
+                cards[5].style.display = 'none';
+            }
+        </script>
 </@t.template>
